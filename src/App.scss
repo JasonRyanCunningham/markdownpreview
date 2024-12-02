@@ -1,0 +1,62 @@
+@mixin table-border{
+  border: 1px solid blue;
+}
+
+*{
+  background-color: lightblue;
+  color           : blue;
+}
+
+code {
+  background-color: white;
+  color           : black;
+}
+
+pre code {
+  display: block;
+}
+
+blockquote {
+  border-left-style: solid;
+}
+
+table {
+  @include table-border;
+}
+
+th {
+  @include table-border;
+}
+
+td {
+  @include table-border;
+}
+
+img {
+  width: 90%;
+}
+
+#editor {
+  height: 675px;
+  width: 90%;
+  padding: 10px;
+}
+
+#preview {
+  height    : 700px;
+  overflow  : scroll;
+  overflow-x: hidden;
+  border: 2px solid;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.column {
+  flex: 50%;
+}
+
+.row {
+  display: flex;
+}
